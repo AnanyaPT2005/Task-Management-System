@@ -142,37 +142,6 @@ This application provides:
 
 ---
 
-# 👥 Role-Based Authorization
-
-Two roles are supported:
-
-## USER
-- Create tasks
-- View their own tasks
-- Delete tasks
-
-## ADMIN
-- Create tasks
-- View tasks of all users
-- See task owner names
-- Delete tasks
-
-Role is stored inside the JWT token and applied dynamically using Spring Security.
-
----
-
-# 📦 Task Management (CRUD)
-
-| Method | Endpoint | Description |
-|--------|----------|------------|
-| POST | `/api/v1/auth/register` | Register new user |
-| POST | `/api/v1/auth/login` | Login and receive JWT |
-| POST | `/api/v1/tasks` | Create task |
-| GET | `/api/v1/tasks` | Get tasks (Admin sees all, User sees own) |
-| DELETE | `/api/v1/tasks/{id}` | Delete task |
-
----
-
 # 🧱 Project Structure
 controller/
 service/
@@ -237,7 +206,6 @@ To use:
 
 ## 1️⃣ Create Database
 
-```sql
 CREATE DATABASE taskdb;
 
 ## 2️⃣Update application.properties:
@@ -280,17 +248,6 @@ This system is designed with scalability in mind:
 - Cloud deployment (AWS / Azure / GCP) for production scaling.
 
 ---
-
-# 🔒 Security Practices Implemented
-
-- BCrypt password hashing for secure credential storage.
-- JWT-based authentication with token expiration.
-- Role-based authorization (USER / ADMIN).
-- DTO pattern to prevent exposing internal entities.
-- Centralized global exception handling (`@ControllerAdvice`).
-- CORS configuration for controlled cross-origin access.
-- Input validation using annotation-based constraints.
-- Secure API versioning structure.
 
 ## Output Screenshots
 Login Page
