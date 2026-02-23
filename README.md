@@ -203,12 +203,12 @@ This system is designed with scalability in mind:
 
 ## Output Screenshots
 Login Page
-![alt text](<Screenshot 2026-02-23 150728.png>)
+![alt text](<login.png>)
 ---
 
 Register Page
-![alt text](<Screenshot 2026-02-23 150742-1.png>)
+![alt text](<register.png>)
 ---
 
 Dashboard Page
-![alt text](<Screenshot 2026-02-23 150955-1.png>)
+![alt text](<dashboard.png>)
