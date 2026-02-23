@@ -68,22 +68,6 @@ public List<TaskResponse> getTasks() {
             .toList();
 }
 
-//     public List<Task> getMyTasks() {
-
-//         String email = SecurityContextHolder.getContext()
-//                 .getAuthentication()
-//                 .getName();
-
-//         User user = userRepository.findByEmail(email)
-//                 .orElseThrow(() -> new RuntimeException("User not found"));
-
-//         return taskRepository.findByUserId(user.getId());
-//     }
-
-    // public void deleteTask(Long id) {
-    //     logger.warn("Task deleted with id: {}", id);
-    //     taskRepository.deleteById(id);
-    // }
 
     public void deleteTask(Long id) {
     Task task = taskRepository.findById(id)

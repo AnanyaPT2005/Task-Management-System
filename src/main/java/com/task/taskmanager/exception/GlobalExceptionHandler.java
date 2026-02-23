@@ -52,4 +52,22 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+    @ExceptionHandler(org.springframework.web.bind.MethodArgumentNotValidException.class)
+public ResponseEntity<?> handleValidationException(
+        org.springframework.web.bind.MethodArgumentNotValidException ex) {
+
+    String errorMessage = ex.getBindingResult()
+            .getFieldErrors()
+            .get(0)
+            .getDefaultMessage();
+
+    Map<String, Object> error = new HashMap<>();
+    error.put("timestamp", LocalDateTime.now());
+    error.put("status", 400);
+    error.put("error", "Bad Request");
+    error.put("message", errorMessage);
+
+    return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+}
 }
