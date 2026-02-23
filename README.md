@@ -40,20 +40,6 @@ This application provides:
 
 ---
 
-# 🔐 Authentication & Security
-
-- Passwords hashed using BCrypt
-- Login returns JWT token
-- JWT contains role information
-- Custom JWT filter validates token
-- Stateless authentication (no sessions)
-- Role-based access enforced in service layer
-- Centralized exception handling using `@ControllerAdvice`
-- Input validation using `@NotBlank`, `@Email`, `@Size`
-- CORS configuration enabled for frontend integration
-
----
-
 # 👥 Role-Based Authorization
 
 Two roles are supported:
@@ -91,40 +77,6 @@ Role is stored inside the JWT token and applied dynamically using Spring Securit
 A secure and scalable Task Management system built using **Spring Boot**, **MySQL**, and **JWT Authentication**, with a simple frontend built using **Vanilla JavaScript (HTML, CSS, JS)**.
 
 This project demonstrates secure backend design, role-based access control, RESTful API development, and scalable architecture principles.
-
----
-
-# 📌 Project Overview
-
-This application provides:
-
-- User registration and login
-- JWT-based stateless authentication
-- Role-based access control (USER / ADMIN)
-- Task CRUD operations
-- Centralized error handling
-- Input validation
-- API versioning
-- Clean layered architecture
-
----
-
-# 🛠 Tech Stack
-
-## Backend
-- Java 17
-- Spring Boot 3
-- Spring Security
-- Spring Data JPA (Hibernate)
-- MySQL
-- JWT (io.jsonwebtoken)
-- Lombok
-- Maven
-
-## Frontend
-- HTML
-- CSS
-- Vanilla JavaScript (Fetch API)
 
 ---
 
@@ -251,12 +203,12 @@ This system is designed with scalability in mind:
 
 ## Output Screenshots
 Login Page
-c:\Users\Admin\Pictures\Screenshots\Screenshot 2026-02-23 150728.png
+![alt text](<Screenshot 2026-02-23 150728.png>)
 ---
 
 Register Page
-c:\Users\Admin\Pictures\Screenshots\Screenshot 2026-02-23 150742.png
+![alt text](<Screenshot 2026-02-23 150742-1.png>)
 ---
 
 Dashboard Page
-c:\Users\Admin\Pictures\Screenshots\Screenshot 2026-02-23 150955.png
+![alt text](<Screenshot 2026-02-23 150955-1.png>)
