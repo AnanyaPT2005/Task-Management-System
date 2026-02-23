@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDashboard()">
+
+<div class="card">
+
+    <h2>Dashboard</h2>
+
+    <p id="welcome"></p>
+    <p id="roleDisplay"></p>
+    
+    <div class="task-input">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="description" style="height: 100px;" placeholder="Description">
+        <button onclick="createTask()">Create Task</button>
+    </div>
+    <div>
+<h3>Tasks List</h3>
+    <ul id="taskList"></ul>
+    </div>
+
+
+   
+    
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #afbeff, #ca97fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.card {
+    background: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+}
+
+/* Inputs section */
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+input ,select{
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #5563d6;
+}
+
+/* Logout button */
+.logout-btn {
+    margin-top: 20px;
+    background-color: #999;
+}
+
+.logout-btn:hover {
+    background-color: #777;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: #f4f6ff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #ff5c5c;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+li button:hover {
+    background-color: #e04848;
+}
+
+/* Messages */
+#roleDisplay {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

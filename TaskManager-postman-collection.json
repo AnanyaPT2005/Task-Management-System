@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "8ecf62d2-57fe-44a1-8922-efaaaa0553d2",
+    "name": "Task Manager API",
+    "description": "Task Manager REST API\n\nBase URL:  \n[http://localhost:8080/api/v1](http://localhost:8080/api/v1)\n\nAuthentication:  \nLogin API returns JWT token.  \nPass token in all protected requests using:\n\nAuthorization: Bearer\n\nRoles:\n\n- USER: Can create and view own tasks.\n    \n- ADMIN: Can view tasks of all users.\n    \n\nFeatures:\n\n- JWT Authentication\n    \n- Role-based access control\n    \n- CRUD operations for Tasks\n    \n- Centralized error handling\n    \n- Input validation\n    \n- MySQL database integration\n    \n- API versioning (/api/v1)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52421603",
+    "_collection_link": "https://go.postman.co/collection/52421603-8ecf62d2-57fe-44a1-8922-efaaaa0553d2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "register request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "login request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "test protected endpoint",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "add task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "delete task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get tasks",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
